@@ -1,0 +1,8 @@
+image: remnux/jsdetox
+# Command to start on workspace startup (optional)
+tasks:
+    - command: /home/nonroot/jsdetox/jsdetox -l $HOSTNAME 2>/dev/null 
+# Ports to expose on workspace startup (optional)
+ports:
+  - port: 8000
+    onOpen: open-preview
